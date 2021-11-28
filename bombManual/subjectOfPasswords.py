@@ -2,8 +2,9 @@ from dataclasses import dataclass
 import click
 
 @click.command()
-@click.option('--letters', prompt='Letter Combinations: ',
-              help='Each letter combination should be a new space') 
+@click.option('--letters', prompt='Letter Combinations',
+              help="""Each letter combination should be a new space. 
+                    Example of the first and third possible letters of a word: abcde  abfghe""") 
 def runMain(letters):
     result = lettersCalculator(letters)
     return result

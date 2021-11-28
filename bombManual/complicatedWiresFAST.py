@@ -23,4 +23,5 @@ def runMain(all):
     return result
 
 if __name__ == '__main__':
-    values = runMain()
+    while(True):
+        runMain()
